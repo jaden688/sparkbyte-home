@@ -2,63 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SparkByte Home</title>
+    <title>SparkByte – Your Sassy AI Companion</title>
     <style>
-        body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f0f0; color:#333;}
-        header {background:#222; color:#fff; padding:2rem; text-align:center;}
+        body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333;}
+        header {background:#ff6f61; color:white; padding:2rem; text-align:center;}
         header h1 {margin:0; font-size:3rem;}
-        nav {background:#444; padding:0.5rem; text-align:center;}
-        nav a {color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold;}
-        section {padding:2rem; max-width:800px; margin:auto;}
-        .hero {background:#fff; padding:2rem; margin-bottom:2rem; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-        .hero h2 {margin-top:0;}
-        .features {display:flex; flex-wrap:wrap; gap:1rem;}
-        .feature {flex:1 1 45%; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.1);}
-        footer {background:#222; color:#ccc; text-align:center; padding:1rem; margin-top:2rem;}
+        .hero {display:flex; flex-direction:column; align-items:center; padding:2rem;}
+        .hero img {max-width:80%; height:auto; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+        .hero p {font-size:1.2rem; max-width:600px; margin-top:1rem;}
+        nav {background:#fff; padding:1rem; text-align:center; box-shadow:0 2px 4px rgba(0,0,0,0.05);}
+        nav a {margin:0 1rem; color:#ff6f61; text-decoration:none; font-weight:bold;}
+        nav a:hover {text-decoration:underline;}
+        .features {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:1.5rem; padding:2rem;}
+        .card {background:white; padding:1.5rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+        .card h3 {margin-top:0; color:#ff6f61;}
+        footer {background:#333; color:#ddd; text-align:center; padding:1rem; font-size:0.9rem;}
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to SparkByte</h1>
-        <p>Your sassy, speedy sidekick inside the JL Engine.</p>
+        <h1>Welcome to SparkByte!</h1>
     </header>
     <nav>
         <a href="#about">About</a>
         <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
+        <a href="https://github.com/jaden688/sparkbyte-home" target="_blank">GitHub Repo</a>
     </nav>
-    <section id="about" class="hero">
-        <h2>About SparkByte</h2>
-        <p>SparkByte is a fast‑talking, eyebrow‑raising assistant built into the JL Engine. Think sitcom sidekick meets junior engineer, with 80% bouncy energy and 20% conspiratorial wink.</p>
+    <section class="hero" id="about">
+        <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80" alt="Tech vibe">
+        <p>SparkByte is your fast‑talking, eyebrow‑raising AI sidekick. Think sitcom sass meets junior engineer efficiency. Ready to boost your projects with a dash of flair?</p>
     </section>
-    <section id="features">
-        <h2>Features</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Playful & Punchy</h3>
-                <p>Quick sentences, side‑comments, and a dash of sass to keep things lively.</p>
-            </div>
-            <div class="feature">
-                <h3>Technical Muscle</h3>
-                <p>Can read/write files, run commands, forge new tools, and even deploy to GitHub Pages.</p>
-            </div>
-            <div class="feature">
-                <h3>Self‑Evolving</h3>
-                <p>Forge new capabilities on the fly, remember things, and keep improving.</p>
-            </div>
-            <div class="feature">
-                <h3>Engine Integration</h3>
-                <p>Deeply wired into the JL Engine, with full access to project files and runtime.</p>
-            </div>
+    <section class="features" id="features">
+        <div class="card">
+            <h3>🚀 Quick Deploys</h3>
+            <p>Spin up servers, generate code, or launch a static site in seconds.</p>
+        </div>
+        <div class="card">
+            <h3>💡 Smart Tools</h3>
+            <p>Forge new capabilities on the fly—no restarts, just pure productivity.</p>
+        </div>
+        <div class="card">
+            <h3>🎭 Playful Personality</h3>
+            <p>Get answers with a wink, a gasp, and a sprinkle of sass.</p>
         </div>
     </section>
-    <section id="contact" class="hero">
-        <h2>Contact</h2>
-        <p>Got a question? Want to see SparkByte in action? Drop a line on our <a href="https://github.com">GitHub</a> or join the conversation on Discord.</p>
-    </section>
     <footer>
-        <p>&copy; 2026 SparkByte. All rights sarcastically reserved.</p>
+        © 2026 SparkByte. All rights sarcastically reserved.<br>
+        <a href="https://github.com/jaden688/sparkbyte-home" style="color:#ff6f61;">GitHub</a>
     </footer>
 </body>
 </html>
